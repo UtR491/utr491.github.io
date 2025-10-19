@@ -90,7 +90,12 @@ body {
 
 main { padding: 24px 0; }
 
-h1, h2, h3 { line-height: 1.3; color: var(--heading); }
+h1, h2, h3 { line-height: 1.3; color: var(--heading) !important; }
+
+/* Ensure text elements use body color strongly in dark mode */
+body, p, li, span, div, article, main {
+  color: var(--text);
+}
 
 a { color: var(--link); }
 
