@@ -122,4 +122,7 @@ code { padding: 2px 4px; border-radius: 4px; }
 
 .site-footer { border-top: 1px solid var(--border); padding: 16px 0 40px; color: var(--muted); }
 
+.post-title { margin-bottom: 0; }
+.post-meta { margin-top: 6px; color: var(--muted); }
+
 

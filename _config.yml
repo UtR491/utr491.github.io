@@ -5,3 +5,9 @@ plugins:
   - jekyll-feed
 highlighter: rouge
 markdown: kramdown
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
