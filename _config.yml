@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Utkarsh's piece of mind
 description: Find my resume and interesting blogs here.
+plugins:
+  - jekyll-feed
