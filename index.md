@@ -19,13 +19,3 @@ title: Home
 {% else %}
 <p>No posts yet. Add markdown files to <code>_posts/</code> named like <code>YYYY-MM-DD-title.md</code>.</p>
 {% endif %}
-
-<p>
-  <a href="{{ '/about/' | relative_url }}">About</a>
-  · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-  · <a href="https://github.com/utr491">GitHub</a>
-  · <a href="/resume.pdf">Resume</a>
-  
-</p>
-
-
