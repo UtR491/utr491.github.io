@@ -5,8 +5,6 @@ title: Home
 
 # {{ site.title }}
 
-{{ site.description }}
-
 ## Latest Posts
 
 {% if site.posts and site.posts.size > 0 %}
