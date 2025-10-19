@@ -1,0 +1,125 @@
+:root[data-theme='light'] {
+  --bg: #fafafa;
+  --text: #222222;
+  --muted: #666666;
+  --link: #0366d6;
+  --border: #e5e5e5;
+  --code-bg: #f5f5f5;
+  --code-text: #222222;
+}
+
+:root[data-theme='dark'] {
+  /* Monokai palette */
+  --bg: #272822;
+  --text: #f8f8f2;
+  --muted: #a1a1a1;
+  --link: #66d9ef;
+  --border: #3a3a34;
+  --code-bg: #272822;
+  --code-text: #f8f8f2;
+  --mono-comment: #75715e;
+  --mono-keyword: #f92672;
+  --mono-string: #e6db74;
+  --mono-func: #a6e22e;
+  --mono-const: #66d9ef;
+  --mono-num: #ae81ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 760px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-title {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--link);
+  margin-right: 12px;
+}
+
+.site-nav a:last-of-type { margin-right: 0; }
+
+#theme-toggle {
+  margin-left: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main { padding: 24px 0; }
+
+h1, h2, h3 { line-height: 1.3; }
+
+a { color: var(--link); }
+
+hr { border: none; border-top: 1px solid var(--border); }
+
+/* Code blocks and inline code */
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+pre, code {
+  background: var(--code-bg);
+  color: var(--code-text);
+}
+
+pre {
+  padding: 12px;
+  overflow: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+code { padding: 2px 4px; border-radius: 4px; }
+
+/* Rouge highlight tweaks to approximate Monokai */
+.highlight { background: var(--code-bg); color: var(--code-text); }
+.highlight .c { color: var(--mono-comment, #75715e); font-style: italic; } /* Comment */
+.highlight .k { color: var(--mono-keyword, #f92672); } /* Keyword */
+.highlight .s { color: var(--mono-string, #e6db74); } /* String */
+.highlight .na, .highlight .nf { color: var(--mono-func, #a6e22e); } /* Name/Function */
+.highlight .no, .highlight .nv { color: var(--mono-const, #66d9ef); } /* Const/Var */
+.highlight .mi, .highlight .m { color: var(--mono-num, #ae81ff); } /* Number */
+
+.site-footer { border-top: 1px solid var(--border); padding: 16px 0 40px; color: var(--muted); }
+
+

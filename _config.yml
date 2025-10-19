@@ -3,3 +3,5 @@ title: Utkarsh's piece of mind
 description: Find my resume and interesting blogs here.
 plugins:
   - jekyll-feed
+highlighter: rouge
+markdown: kramdown
